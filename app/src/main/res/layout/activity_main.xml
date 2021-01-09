@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EzyFood"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/myOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity ="right"
+            android:text="My Order"
+            android:onClick="myOrder"
+            android:textSize="10sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/DrinksBtn"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+
+        android:gravity="center"
+        android:onClick="Drinks"
+        android:text="@string/drinksTxt"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:id="@+id/SnacksBtn"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+
+
+        android:gravity="center"
+        android:onClick="Snacks"
+        android:text="@string/SnacksTxt"
+        android:textStyle="bold"
+        />
+
+
+        <Button
+            android:id="@+id/FoodsBtn"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:onClick="Foods"
+            android:text="@string/FoodTxt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/TopupBtn"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:onClick="Topup"
+            android:text="@string/TopupTxt" />
+        <Button
+            android:id="@+id/StoreBtn"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:onClick="Store"
+            android:text="Store" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

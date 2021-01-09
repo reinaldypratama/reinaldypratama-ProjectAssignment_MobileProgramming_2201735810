@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReinaldyUTS</string>
+    <string name="drinksTxt">Drinks</string>
+    <string name="SnacksTxt">Snacks</string>
+    <string name="FoodTxt">Foods</string>
+    <string name="TopupTxt">TopUp</string>
+</resources>

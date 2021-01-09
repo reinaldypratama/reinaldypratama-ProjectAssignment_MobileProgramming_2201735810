@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderComplete"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Order"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity ="right"
+            android:text="Menu Utama"
+            android:onClick="Menu"
+            android:textSize="10sp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/ThanksTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TerimaKasih, Silahkan Order kembali"
+        android:layout_gravity="center"
+        android:textColor="#EF0000"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/totalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <GridView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridOrder"
+        android:numColumns="1"/>
+
+</LinearLayout>
